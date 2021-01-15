@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="titulo">Titulo de nuestra pagina web</h1>
+
+    <p id="primero">
+      1. Lorem ipsum <b>dolor</b> sit amet consectetur adipisicing elit.
+      Dignissimos vel quo repudiandae laborum provident voluptatem vero culpa
+      distinctio voluptates veritatis! Dicta eligendi praesentium nobis
+      consectetur, nam saepe at. Temporibus, laboriosam?
+    </p>
+
+    <p id="segundo">
+      2. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
+      vel quo repudiandae laborum provident voluptatem vero culpa distinctio
+      voluptates veritatis! Dicta eligendi praesentium nobis consectetur, am
+      saepe at. Temporibus, laboriosam?
+    </p>
+
+    <p id="terceros">
+      3. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
+      vel quo repudiandae laborum provident voluptatem vero culpa distinctio
+      voluptates veritatis! Dicta eligendi praesentium nobis consectetur, nam
+      saepe at. Temporibus, laboriosam?
+    </p>
+
+    <script>
+      //trae por etiquta
+      var elementosP = document.getElementsByTagName("p");
+// console.log(elementosP)
+//       for (let parrafo of elementosP) {
+//         console.log(parrafo.innerHTML);
+//       }
+      //elementosP.innerHTML.replace("dolor","mica");
+      //trae por id
+      var segundoParrafo = document.getElementById("segundo");
+      //console.log(segundoParrafo.innerHTML.replace("Lorem", "mica"));
+      //var Remplazo1 = segundoParrafo.replace(segundoParrafo, "Mica");
+      
+      setTimeout(() => {segundoParrafo.innerHTML = "<h1>MICA<h1/>";}, 1000)
+      setTimeout(() => {segundoParrafo.innerHTML = "<h2>MICA<h2/>";}, 2000)
+      setTimeout(() => {segundoParrafo.innerHTML = "<h3>MICA<h3/>";}, 3000)
+      
+    </script>
+  </body>
+</html>

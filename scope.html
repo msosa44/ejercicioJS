@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      
+        //Global
+        var variableGlobal = "esta es global"; 
+        var miFuncion = function () {
+            //LOCAL ACCEDE DENTRO DE FAUNCION
+               var variableLocal = "esta es local";
+               
+            //cambio valor de variable GLOBAL
+               variableGlobal = "esta es global modificada";
+               alert(variableGlobal);
+           //funcion anidad
+           var FuncionLocal = function(){
+               var VariableLocal = "Esta es una variable local, dentro de la funcion";
+               alert(VariableLocal);
+           }
+              FuncionLocal();
+            
+        }
+
+        miFuncion();
+         
+
+    </script>
+</body>
+</html>
